@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<f:view contentType="text/html" encoding="UTF-8"/>
+
+<h:head>
+    <title>Erro na Aplicacao</title>
+    <h:outputStylesheet library="css" name="estilo.css"/>
+</h:head>
+
+<h:body>
+    <div class="container erro">
+        <h1>Ocorreu um erro</h1>
+        <p>Nao foi possivel concluir a operacao solicitada.</p>
+        <p class="mensagem-erro">
+            <h:outputText value="#{sessionScope.mensagemErro}"/>
+        </p>
+        <div class="acoes">
+            <h:link outcome="index" value="Voltar para a pagina inicial" styleClass="botao-link"/>
+        </div>
+    </div>
+</h:body>
+</html>

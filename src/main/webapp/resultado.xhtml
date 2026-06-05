@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<f:view contentType="text/html" encoding="UTF-8"/>
+
+<h:head>
+    <title>Resultado - Numero Aleatorio</title>
+    <h:outputStylesheet library="css" name="estilo.css"/>
+</h:head>
+
+<h:body>
+    <div class="container">
+        <h1>Resultado da Geracao</h1>
+
+        <div class="resultado">
+            <p>Valor maximo informado:
+                <strong>#{numeroAleatorioBean.valorMaximo}</strong>
+            </p>
+            <p>Numero aleatorio gerado:
+                <strong class="numero-destaque">#{numeroAleatorioBean.numeroGerado}</strong>
+            </p>
+            <p class="observacao">O valor foi persistido no banco de dados pela integracao JPA.</p>
+        </div>
+
+        <div class="acoes">
+            <h:link outcome="index" value="Gerar outro numero" styleClass="botao-link"/>
+        </div>
+    </div>
+</h:body>
+</html>

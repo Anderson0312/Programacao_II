@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 12pt;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 24px;
+}
+
+.container {
+    max-width: 640px;
+    margin: 0 auto;
+    background: #ffffff;
+    border: 1px solid #d9dee3;
+    border-radius: 8px;
+    padding: 24px;
+}
+
+h1 {
+    color: #1f3a5f;
+    font-size: 18pt;
+    margin-top: 0;
+}
+
+.resultado {
+    background: #eef5ff;
+    border-left: 4px solid #2f6fed;
+    padding: 16px;
+    margin: 16px 0;
+}
+
+.numero-destaque {
+    font-size: 20pt;
+    color: #2f6fed;
+}
+
+.acoes {
+    margin-top: 20px;
+}
+
+.botao,
+.botao-link {
+    display: inline-block;
+    background: #2f6fed;
+    color: #ffffff !important;
+    text-decoration: none;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.mensagens,
+.mensagem-erro {
+    color: #b42318;
+    margin-top: 12px;
+}
+
+.erro {
+    border-color: #f5c2c0;
+}
+
+.observacao {
+    color: #5f6b7a;
+    font-size: 11pt;
+}

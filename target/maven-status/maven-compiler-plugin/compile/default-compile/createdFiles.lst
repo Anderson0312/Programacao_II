@@ -1,0 +1,4 @@
+br\edu\prog2\filter\JpaFilter.class
+br\edu\prog2\bean\NumeroAleatorioBean.class
+br\edu\prog2\entity\NumeroAleatorio.class
+br\edu\prog2\util\JpaUtil.class

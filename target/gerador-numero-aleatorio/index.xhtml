@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<f:view contentType="text/html" encoding="UTF-8"/>
+
+<h:head>
+    <title>Gerador de Numero Aleatorio</title>
+    <h:outputStylesheet library="css" name="estilo.css"/>
+</h:head>
+
+<h:body>
+    <div class="container">
+        <h1>Gerador de Numero Aleatorio</h1>
+        <p>Informe um valor numerico. O sistema gerara um numero aleatorio entre 0 e o valor informado.</p>
+
+        <h:form id="formEntrada">
+            <h:panelGrid columns="2" cellpadding="8">
+                <h:outputLabel for="valorMaximo" value="Valor maximo:"/>
+                <h:inputText id="valorMaximo"
+                             value="#{numeroAleatorioBean.valorMaximo}"
+                             required="true"
+                             requiredMessage="O valor maximo e obrigatorio.">
+                    <f:validateLongRange minimum="0"
+                                         maximum="2147483647"
+                                         minimumMessage="O valor deve ser maior ou igual a zero."/>
+                </h:inputText>
+            </h:panelGrid>
+
+            <h:messages globalOnly="false" styleClass="mensagens"/>
+
+            <div class="acoes">
+                <h:commandButton value="Gerar numero aleatorio"
+                                 action="#{numeroAleatorioBean.gerar}"
+                                 styleClass="botao"/>
+            </div>
+        </h:form>
+    </div>
+</h:body>
+</html>
